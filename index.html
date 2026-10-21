@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone App</title>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#0f172a;color:#e2e8f0;text-align:center;padding:16px}
+  button{font-size:1.2rem;padding:12px 24px;border:0;border-radius:12px;background:#38bdf8;color:#0f172a;margin-top:16px}
+</style>
+</head>
+<body>
+<main>
+  <h1>זה עובד 🎉</h1>
+  <p>האתר מתעדכן מכל דחיפה לגיטהאב.</p>
+  <button id="b">לחצו: 0</button>
+</main>
+<script>
+  let n = 0;
+  const b = document.getElementById('b');
+  b.onclick = () => { b.textContent = 'לחצו: ' + (++n); };
+</script>
+</body>
+</html>
